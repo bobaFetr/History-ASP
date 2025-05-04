@@ -1,0 +1,29 @@
+@model List<MyMvcApp.Models.Landmark>
+
+@{
+    ViewData["Title"] = "Historical Landmarks";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Year Established</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var landmark in Model)
+    {
+        <tr>
+            <td>@landmark.Name</td>
+            <td>@landmark.Description</td>
+            <td>@landmark.Location</td>
+            <td>@landmark.YearEstablished</td>
+        </tr>
+    }
+    </tbody>
+</table>

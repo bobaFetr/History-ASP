@@ -1,0 +1,336 @@
+﻿@* <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Historical__Facts_3</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Historical__Facts_3.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Historical__Facts_3</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"    asp-action="Privacy">Privacy</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"  asp-action="Africa1">Africa</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/ww2army.html">View WW2 Army Sizes</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="LandMark" asp-action="Index">Historical Landmarks</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - Historical__Facts_3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> *@
+
+@* <P>////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</P> *@
+
+
+
+@* Razor Layout Integration *@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Historical_Facts</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Historical__Facts_3.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://www.worldofwallpaper.com/media/catalog/product/cache/cb6d4e8db131c61a8cb54c52a893246a/r/a/ras006-green-army-camoflauge-world-of-wallpaper-ae1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background: orange;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: orange;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: #e67e22;
+        }
+
+        .content, .footer-section {
+            text-align: center;
+            margin: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-section a {
+            color: lightgray;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navbar -->
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="2 AUTH PAGE.HTML">Register</a>
+            <a href="RegionPeriod.html">Select Region and Period</a>
+            <a href="Australia.html">Choose Country</a>
+            <a href="#europe">Europe</a>
+            <a href="#bulgaria">Bulgaria</a>
+            <a href="#asia">Asia</a>
+            <a href="#africa">Africa</a>
+            <a href="#">About Us</a>
+            <a href="#">Personalities</a>
+            <a href="Statistika.html">Statistics</a>
+            <a href="ModifiedWik.html">Wikipedia Search</a>
+            <a href="/server/data/inde.html">CRUD</a>
+            <li class="nav-item">
+                 <a class="nav-link text-dark" asp-area="" asp-controller="Home"  asp-action="Africa1">Africa</a>
+            </li>
+        </nav>
+    </header>
+
+    <!-- Wikipedia Search -->
+    <div class="container text-center">
+        <h1>Wikipedia Search</h1>
+        <input type="text" id="search-input" placeholder="Enter a topic..." />
+        <button onclick="searchWikipedia()">Search</button>
+        <div id="results"></div>
+    </div>
+
+    <!-- Sections -->
+    <div class="content" id="europe">
+        <h2>History of Europe</h2>
+        <p>Explore the rich and diverse history of Europe.</p>
+    </div>
+
+    <div class="content" id="bulgaria">
+        <h2>History of Bulgaria</h2>
+        <p>Discover Bulgaria's fascinating historical journey.</p>
+    </div>
+
+    <div class="content" id="asia">
+        <h2>History of Asia</h2>
+        <p>Learn about Asia's ancient civilizations and legacy.</p>
+    </div>
+
+    <div class="content" id="africa">
+        <h2>History of Africa</h2>
+        <p>Explore Africa's cultures, empires, and impact.</p>
+    </div>
+
+    <!-- Media Section -->
+    <div class="container text-center">
+        <h2>Watch Historical Videos</h2>
+        <video width="640" height="360" controls>
+            <source src="Roman_Empire.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video width="640" height="360" controls>
+            <source src="battles-won-and-lost--timeline---operation-barbarossa-when-the-nazis-invaded-the-soviet-union.mp4" type="video/mp4">
+        </video>
+
+        <video width="640" height="360" controls>
+            <source src="operation-winter-solstice---himmler-attacks-west-1945.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Audio -->
+    <audio src="ttsMP3.com_VoiceText_2025-4-8_8-54-9.mp3" controls>
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Image Gallery -->
+    <div class="text-center">
+        <a href="Christianity.html"><img src="./images.jpg.jpg" alt="Christianity" width="400" height="400"></a>
+        <a href="Crusades.html"><img src="./Crusades.jpg" alt="Crusades" width="400" height="400"></a>
+        <img src="./Roman_Empire_Trajan_117AD.png" alt="Roman Empire" width="400" height="400">
+        <img src="/Germany-Poland-September-1-1939.webp" width="400" height="400">
+        <img src="/ww2.jpg" width="400" height="400">
+        <img src="/Medieval-Europe-map-1000x600.jpg" width="400" height="400">
+        <figure>
+            <img src="tsar.jpg" width="400" height="400">
+            <figcaption>Asia During WW2</figcaption>
+        </figure>
+        <figure>
+            <a href="/Pacific_Area_-_The_Imperial_Powers_1939_-_Map.svg.png">
+                <img src="/Pacific_Area_-_The_Imperial_Powers_1939_-_Map.svg.png" width="400" height="400">
+            </a>
+            <figcaption>Asia Map 1939</figcaption>
+        </figure>
+    </div>
+
+    <!-- Razor Body Placeholder -->
+    <main role="main" class="pb-3 container">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Company Name</h3>
+                <p>Address: 1234 Main St, City, Country</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@company.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <p>&copy; 2025 Historical_Facts. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        async function searchWikipedia() {
+            const query = document.getElementById("search-input").value;
+            const resultsDiv = document.getElementById("results");
+
+            if (!query) {
+                resultsDiv.innerHTML = "<p>Please enter a search term.</p>";
+                return;
+            }
+
+            const apiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(query)}`;
+
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) throw new Error(`Error: ${response.status}`);
+                const data = await response.json();
+
+                resultsDiv.innerHTML = `
+                    <h2>${data.title}</h2>
+                    <p>${data.extract}</p>
+                    <a href="${data.content_urls.desktop.page}" target="_blank">Read more on Wikipedia</a>
+                `;
+            } catch (error) {
+                resultsDiv.innerHTML = `<p>${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
+
+

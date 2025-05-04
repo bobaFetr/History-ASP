@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Historical  Facts 3.props" />
+</Project>
