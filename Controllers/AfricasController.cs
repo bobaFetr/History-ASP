@@ -106,7 +106,7 @@ namespace Historical__Facts_3.Controllers
                         return NotFound();
                     }
                     else
-                    {
+                    {   
                         throw;
                     }
                 }
