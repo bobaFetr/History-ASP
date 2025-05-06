@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\vscode\\launch.json",
+      "PackagePath": "staticwebassets\\vscode\\launch.json"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Historical  Facts 3.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

@@ -1,0 +1,25 @@
+@model IEnumerable<Historical__Facts_3.Models.Africa>
+
+@{
+    ViewData["Title"] = "Africa Facts";
+}
+
+<h1>Africa Facts</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fact ID</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.HistoricalFactId</td>
+                <td>@item.FactDescription</td>
+            </tr>
+        }
+    </tbody>
+</table>

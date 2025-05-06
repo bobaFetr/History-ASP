@@ -18857,6 +18857,304 @@
           "Value": "lib/jquery/dist/jquery.slim.min.js.gz"
         }
       ]
+    },
+    {
+      "Route": "vscode/launch.7r2dux0nuu.json",
+      "AssetFile": "vscode/launch.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002267573696"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7r2dux0nuu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE="
+        },
+        {
+          "Name": "label",
+          "Value": "vscode/launch.json"
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.7r2dux0nuu.json",
+      "AssetFile": "vscode/launch.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7r2dux0nuu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE="
+        },
+        {
+          "Name": "label",
+          "Value": "vscode/launch.json"
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.7r2dux0nuu.json.gz",
+      "AssetFile": "vscode/launch.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7r2dux0nuu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU="
+        },
+        {
+          "Name": "label",
+          "Value": "vscode/launch.json.gz"
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.json",
+      "AssetFile": "vscode/launch.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002267573696"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE="
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.json",
+      "AssetFile": "vscode/launch.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE="
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.json.gz",
+      "AssetFile": "vscode/launch.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU="
+        }
+      ]
     }
   ]
 }

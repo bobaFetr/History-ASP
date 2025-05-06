@@ -41,16 +41,16 @@ public class HomeController : Controller
     //     };
     //     return View(africa);
     // }
-    public async Task<IActionResult> Africa1()
-    {
-        var africa = await Task.Run(() => new Africa(_logger)
-        {
-            HistoricalFactId = 1,
-            FactDescription = "Sample historical fact about Africa."
-        });
+    // public async Task<IActionResult> Africa1()
+    // {
+    //     var africa = await Task.Run(() => new Africa(_logger)
+    //     {
+    //         HistoricalFactId = 1,
+    //         FactDescription = "Sample historical fact about Africa."
+    //     });
 
-        return View(africa);
-    }
+    //     return View(africa);
+    // }
 
     public async Task<IActionResult> WW2Armies()
     {
@@ -77,3 +77,5 @@ public class HomeController : Controller
     //     return View(ww2Armies);
     // }
 }
+
+

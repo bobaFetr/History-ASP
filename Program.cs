@@ -8,6 +8,8 @@ namespace Historical__Facts_3
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            // builder.Services.AddDbContext<HistoryContext>(options =>
+            //     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
@@ -30,7 +32,7 @@ namespace Historical__Facts_3
             app.MapStaticAssets();
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}")
+                pattern: "{controller=Home}/{action=Index}/{id?}")
                 .WithStaticAssets();
 
 

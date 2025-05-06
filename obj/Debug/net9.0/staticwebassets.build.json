@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uNP1oxhcdQXneSX/4fWfLGJzZjej/mxt600v5bdubIs=",
+  "Hash": "vqpZSrkrkiXD0jjgwckfOjCo8EOAfQHvAvDreyUIy24=",
   "Source": "Historical  Facts 3",
   "BasePath": "_content/Historical  Facts 3",
   "Mode": "Default",
@@ -708,6 +708,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\Debug\\net9.0\\compressed\\jm12h7hxrl-7r2dux0nuu.gz",
+      "SourceId": "Historical  Facts 3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Historical  Facts 3",
+      "RelativePath": "vscode/launch#[.{fingerprint=7r2dux0nuu}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\vscode\\launch.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "9k8hsvii3q",
+      "Integrity": "Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\vscode\\launch.json"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\Debug\\net9.0\\compressed\\kjo5iws3gf-jj8uyg4cgr.gz",
@@ -2724,6 +2745,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\vscode\\launch.json",
+      "SourceId": "Historical  Facts 3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\",
+      "BasePath": "_content/Historical  Facts 3",
+      "RelativePath": "vscode/launch#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7r2dux0nuu",
+      "Integrity": "ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vscode\\launch.json"
     }
   ],
   "Endpoints": [
@@ -21878,6 +21920,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw="
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.7r2dux0nuu.json",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\Debug\\net9.0\\compressed\\jm12h7hxrl-7r2dux0nuu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002267573696"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7r2dux0nuu"
+        },
+        {
+          "Name": "label",
+          "Value": "vscode/launch.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE="
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.7r2dux0nuu.json",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\vscode\\launch.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7r2dux0nuu"
+        },
+        {
+          "Name": "label",
+          "Value": "vscode/launch.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE="
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.7r2dux0nuu.json.gz",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\Debug\\net9.0\\compressed\\jm12h7hxrl-7r2dux0nuu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7r2dux0nuu"
+        },
+        {
+          "Name": "label",
+          "Value": "vscode/launch.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU="
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.json",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\Debug\\net9.0\\compressed\\jm12h7hxrl-7r2dux0nuu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002267573696"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE="
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.json",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\vscode\\launch.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ze4YJ8BcQw7pkLjKcMGMoA/PuCwB03Yr/5e9T5u7BTE="
+        }
+      ]
+    },
+    {
+      "Route": "vscode/launch.json.gz",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\Debug\\net9.0\\compressed\\jm12h7hxrl-7r2dux0nuu.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6JBC6qTPpLFdsUdPGz7SP+Un/LmaWezrBY2rGciUqU="
         }
       ]
     }
