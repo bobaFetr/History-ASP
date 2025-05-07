@@ -18,5 +18,7 @@ namespace YourNamespace.Models
         [StringLength(500)]
         
         public string Fact { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }

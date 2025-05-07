@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vqpZSrkrkiXD0jjgwckfOjCo8EOAfQHvAvDreyUIy24=",
+  "Hash": "JGOi9Jw0gxLFkyJg71Y3CB5h2QeTeiJiuCyQ/MkiKZ4=",
   "Source": "Historical  Facts 3",
   "BasePath": "_content/Historical  Facts 3",
   "Mode": "Default",
@@ -2745,6 +2745,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\licensed-image.jpg",
+      "SourceId": "Historical  Facts 3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\",
+      "BasePath": "_content/Historical  Facts 3",
+      "RelativePath": "licensed-image#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qwyjx7gh87",
+      "Integrity": "hksCcymFib3QlvqFcAXqQn9ty9+VqI28y9vSJjue354=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\licensed-image.jpg"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\vscode\\launch.json",
@@ -21924,6 +21945,88 @@
       ]
     },
     {
+      "Route": "licensed-image.jpg",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\licensed-image.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hksCcymFib3QlvqFcAXqQn9ty9+VqI28y9vSJjue354=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 10:07:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hksCcymFib3QlvqFcAXqQn9ty9+VqI28y9vSJjue354="
+        }
+      ]
+    },
+    {
+      "Route": "licensed-image.qwyjx7gh87.jpg",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\licensed-image.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hksCcymFib3QlvqFcAXqQn9ty9+VqI28y9vSJjue354=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 10:07:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qwyjx7gh87"
+        },
+        {
+          "Name": "label",
+          "Value": "licensed-image.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hksCcymFib3QlvqFcAXqQn9ty9+VqI28y9vSJjue354="
+        }
+      ]
+    },
+    {
       "Route": "vscode/launch.7r2dux0nuu.json",
       "AssetFile": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\Debug\\net9.0\\compressed\\jm12h7hxrl-7r2dux0nuu.gz",
       "Selectors": [
@@ -21948,7 +22051,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+          "Value": "Tue, 06 May 2025 10:07:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22009,7 +22112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+          "Value": "Tue, 06 May 2025 10:07:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22054,7 +22157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+          "Value": "Tue, 06 May 2025 10:07:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22109,7 +22212,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+          "Value": "Tue, 06 May 2025 10:07:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22162,7 +22265,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+          "Value": "Tue, 06 May 2025 10:07:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22199,7 +22302,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 08:11:25 GMT"
+          "Value": "Tue, 06 May 2025 10:07:13 GMT"
         },
         {
           "Name": "Cache-Control",

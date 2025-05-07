@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\licensed-image.jpg",
+      "PackagePath": "staticwebassets\\licensed-image.jpg"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\wwwroot\\vscode\\launch.json",
       "PackagePath": "staticwebassets\\vscode\\launch.json"
     },
