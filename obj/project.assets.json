@@ -11891,11 +11891,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\Historical  Facts 3.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\alll stuff\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\Historical  Facts 3.csproj",
       "projectName": "Historical  Facts 3",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\Historical  Facts 3.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\alll stuff\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\Historical  Facts 3.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\alll stuff\\ASP .NET\\Historical Facts Official\\Historical facts 3\\Historical  Facts 3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
