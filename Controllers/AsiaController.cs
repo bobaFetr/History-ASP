@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Historical__Facts_3.Data;
 using Historical__Facts_3.Models;
 
 namespace Historical__Facts_3.Controllers

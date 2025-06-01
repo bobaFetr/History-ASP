@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Historical__Facts_3.Data;
 using Microsoft.Extensions.DependencyInjection;
 namespace Historical__Facts_3
 {
@@ -10,6 +11,7 @@ namespace Historical__Facts_3
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            
             builder.Services.AddDbContext<HistoryContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

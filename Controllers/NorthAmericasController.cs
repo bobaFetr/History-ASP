@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Historical__Facts_3.Models;
+using Historical__Facts_3.Data;
 
 namespace Historical__Facts_3.Controllers
 {
@@ -21,7 +22,7 @@ namespace Historical__Facts_3.Controllers
         // GET: NorthAmericas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.NorthAmericas.ToListAsync());
+            return View(await _context.NorthAmerica.ToListAsync());
         }
 
         // GET: NorthAmericas/Details/5
@@ -32,7 +33,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var northAmerica = await _context.NorthAmericas
+            var northAmerica = await _context.NorthAmerica
                 .FirstOrDefaultAsync(m => m.HistoricalFactId == id);
             if (northAmerica == null)
             {
@@ -72,7 +73,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var northAmerica = await _context.NorthAmericas.FindAsync(id);
+            var northAmerica = await _context.NorthAmerica.FindAsync(id);
             if (northAmerica == null)
             {
                 return NotFound();
@@ -123,7 +124,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var northAmerica = await _context.NorthAmericas
+            var northAmerica = await _context.NorthAmerica
                 .FirstOrDefaultAsync(m => m.HistoricalFactId == id);
             if (northAmerica == null)
             {
@@ -138,10 +139,10 @@ namespace Historical__Facts_3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var northAmerica = await _context.NorthAmericas.FindAsync(id);
+            var northAmerica = await _context.NorthAmerica.FindAsync(id);
             if (northAmerica != null)
             {
-                _context.NorthAmericas.Remove(northAmerica);
+                _context.NorthAmerica.Remove(northAmerica);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +151,7 @@ namespace Historical__Facts_3.Controllers
 
         private bool NorthAmericaExists(int id)
         {
-            return _context.NorthAmericas.Any(e => e.HistoricalFactId == id);
+            return _context.NorthAmerica.Any(e => e.HistoricalFactId == id);
         }
     }
 }

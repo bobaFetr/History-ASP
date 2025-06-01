@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+//??
 using Historical__Facts_3.Models;
+using Historical__Facts_3.Data;
 
 namespace Historical__Facts_3.Controllers
 {
@@ -19,11 +21,14 @@ namespace Historical__Facts_3.Controllers
         }
 
         // GET: Africas
-        public async Task<IActionResult> Index()
+        // public async Task<IActionResult> Index()
+        // {
+        //     return View(await _context.Africas.ToListAsync());
+        // }
+        public IActionResult Index()
         {
-            return View(await _context.Africas.ToListAsync());
+            return View(_context.Africa.ToList());
         }
-
         // GET: Africas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -32,7 +37,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var africa = await _context.Africas
+            var africa = await _context.Africa
                 .FirstOrDefaultAsync(m => m.HistoricalFactId == id);
             if (africa == null)
             {
@@ -72,7 +77,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var africa = await _context.Africas.FindAsync(id);
+            var africa = await _context.Africa.FindAsync(id);
             if (africa == null)
             {
                 return NotFound();
@@ -106,7 +111,7 @@ namespace Historical__Facts_3.Controllers
                         return NotFound();
                     }
                     else
-                    {   
+                    {
                         throw;
                     }
                 }
@@ -123,7 +128,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var africa = await _context.Africas
+            var africa = await _context.Africa
                 .FirstOrDefaultAsync(m => m.HistoricalFactId == id);
             if (africa == null)
             {
@@ -138,10 +143,10 @@ namespace Historical__Facts_3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var africa = await _context.Africas.FindAsync(id);
+            var africa = await _context.Africa.FindAsync(id);
             if (africa != null)
             {
-                _context.Africas.Remove(africa);
+                _context.Africa.Remove(africa);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +155,7 @@ namespace Historical__Facts_3.Controllers
 
         private bool AfricaExists(int id)
         {
-            return _context.Africas.Any(e => e.HistoricalFactId == id);
+            return _context.Africa.Any(e => e.HistoricalFactId == id);
         }
     }
 }

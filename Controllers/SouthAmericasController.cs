@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Historical__Facts_3.Data;
 using Historical__Facts_3.Models;
 
 namespace Historical__Facts_3.Controllers
@@ -21,7 +22,7 @@ namespace Historical__Facts_3.Controllers
         // GET: SouthAmericas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.SouthAmericas.ToListAsync());
+            return View(await _context.SouthAmerica.ToListAsync());
         }
 
         // GET: SouthAmericas/Details/5
@@ -32,7 +33,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var southAmerica = await _context.SouthAmericas
+            var southAmerica = await _context.SouthAmerica
                 .FirstOrDefaultAsync(m => m.HistoricalFactId == id);
             if (southAmerica == null)
             {
@@ -72,7 +73,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var southAmerica = await _context.SouthAmericas.FindAsync(id);
+            var southAmerica = await _context.SouthAmerica.FindAsync(id);
             if (southAmerica == null)
             {
                 return NotFound();
@@ -123,7 +124,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var southAmerica = await _context.SouthAmericas
+            var southAmerica = await _context.SouthAmerica
                 .FirstOrDefaultAsync(m => m.HistoricalFactId == id);
             if (southAmerica == null)
             {
@@ -138,10 +139,10 @@ namespace Historical__Facts_3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var southAmerica = await _context.SouthAmericas.FindAsync(id);
+            var southAmerica = await _context.SouthAmerica.FindAsync(id);
             if (southAmerica != null)
             {
-                _context.SouthAmericas.Remove(southAmerica);
+                _context.SouthAmerica.Remove(southAmerica);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +151,7 @@ namespace Historical__Facts_3.Controllers
 
         private bool SouthAmericaExists(int id)
         {
-            return _context.SouthAmericas.Any(e => e.HistoricalFactId == id);
+            return _context.SouthAmerica.Any(e => e.HistoricalFactId == id);
         }
     }
 }

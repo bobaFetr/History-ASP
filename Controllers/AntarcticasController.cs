@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Historical__Facts_3.Data;
 using Historical__Facts_3.Models;
 
 namespace Historical__Facts_3.Controllers
@@ -21,7 +22,7 @@ namespace Historical__Facts_3.Controllers
         // GET: Antarcticas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Antarcticas.ToListAsync());
+            return View(await _context.Antarctica.ToListAsync());
         }
 
         // GET: Antarcticas/Details/5
@@ -32,7 +33,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var antarctica = await _context.Antarcticas
+            var antarctica = await _context.Antarctica
                 .FirstOrDefaultAsync(m => m.HistoricalFactId == id);
             if (antarctica == null)
             {
@@ -72,7 +73,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var antarctica = await _context.Antarcticas.FindAsync(id);
+            var antarctica = await _context.Antarctica.FindAsync(id);
             if (antarctica == null)
             {
                 return NotFound();
@@ -123,7 +124,7 @@ namespace Historical__Facts_3.Controllers
                 return NotFound();
             }
 
-            var antarctica = await _context.Antarcticas
+            var antarctica = await _context.Antarctica
                 .FirstOrDefaultAsync(m => m.HistoricalFactId == id);
             if (antarctica == null)
             {
@@ -138,10 +139,10 @@ namespace Historical__Facts_3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var antarctica = await _context.Antarcticas.FindAsync(id);
+            var antarctica = await _context.Antarctica.FindAsync(id);
             if (antarctica != null)
             {
-                _context.Antarcticas.Remove(antarctica);
+                _context.Antarctica.Remove(antarctica);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +151,7 @@ namespace Historical__Facts_3.Controllers
 
         private bool AntarcticaExists(int id)
         {
-            return _context.Antarcticas.Any(e => e.HistoricalFactId == id);
+            return _context.Antarctica.Any(e => e.HistoricalFactId == id);
         }
     }
 }
