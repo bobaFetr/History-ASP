@@ -29,7 +29,7 @@ namespace HistoricalFacts.Controllers
             if (id == null) return NotFound();
 
             var eventData = await _context.Events
-                .Include(e => e.Facts) // Include Facts for the Event
+                .Include(e => e) // Include Facts for the Event
                     .ThenInclude(f => f.Continent) // Include Continent for each Fact
                 .Include(e => e.EventPersons)
                     .ThenInclude(ep => ep.Person) // Include Person for each join entry
@@ -40,12 +40,12 @@ namespace HistoricalFacts.Controllers
             var viewModel = new EventDetailViewModel
             {
                 Event = eventData,
-                RelatedFacts = eventData.Facts.Select(f => new FactInfoViewModel
+                RelatedFacts = eventData.Facts.Select(f => new Fact//FactInfoViewModel
                 {
-                    FactID = f.FactID,
+                    FactId = f.FactID,
                     Description = f.Description,
                     FactYear = f.FactYear,
-                    ContinentName = f.Continent?.ContName ?? "N/A"
+                   // ContinentName = f.Continent?.ContName ?? "N/A"
                 }).OrderBy(f=>f.FactYear),
                 RelatedPersons = eventData.EventPersons.Select(ep => ep.Person!)
             };
