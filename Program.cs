@@ -12,7 +12,7 @@ namespace Historical__Facts_3
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             
-            builder.Services.AddDbContext<HistoryContext>(options =>
+            builder.Services.AddDbContext<DbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
