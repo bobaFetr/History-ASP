@@ -1,5 +1,6 @@
-using HistoricalFacts.Data;
-using HistoricalFacts.Models;
+using Historical__Facts_3.Models;
+using HistoricalFacts.ViewModels;
+using HistoricalFacts.Areas;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,9 +9,9 @@ namespace HistoricalFacts.Areas.Admin.Controllers
     [Area("Admin")] // IMPORTANT
     public class EventsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly History2Context _context;
 
-        public EventsController(ApplicationDbContext context)
+        public EventsController(History2Context context)
         {
             _context = context;
         }
