@@ -1,0 +1,16 @@
+@model IEnumerable<HistoricalFacts.Models.Event>
+@{ ViewData["Title"] = "Historical Events"; }
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a asp-action="Details" asp-route-id="@item.EventID" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">@item.Descr</h5>
+                <small>@item.StartYear - @(item.EndYear.HasValue ? item.EndYear.ToString() : "Present")</small>
+            </div>
+        </a>
+    }
+</div>

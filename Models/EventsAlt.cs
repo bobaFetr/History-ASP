@@ -20,4 +20,13 @@ public partial class EventsAlt
     public byte? EndMonth { get; set; }
 
     public byte? EndDay { get; set; }
+
+    // Add this navigation property:
+    public virtual ICollection<Fact> Facts { get; set; } = new List<Fact>();
+
+    // If you want to include EventPersons as well:
+    public virtual ICollection<EventPerson> EventPersons { get; set; } = new List<EventPerson>();
+
+
+
 }

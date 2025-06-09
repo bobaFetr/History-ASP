@@ -18,4 +18,8 @@ public partial class Fact
     public byte? FactMonth { get; set; }
 
     public byte? FactDay { get; set; }
+
+    // Add these navigation properties:
+    public virtual Event? Event { get; set; }
+    public virtual Continent? Continent { get; set; }
 }
