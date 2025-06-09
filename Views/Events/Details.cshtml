@@ -15,9 +15,9 @@
                 @foreach (var fact in Model.RelatedFacts)
                 {
                     <tr>
-                        <td>@fact.FactYear</td>
-                        <td>@fact.Description</td>
-                        <td>@fact.ContinentName</td>
+                        <td>@fact.StartYear</td>
+                        <td>@fact.Descr</td>
+                        @* <td>@fact.ContinentName</td> *@
                     </tr>
                 }
             </tbody>
