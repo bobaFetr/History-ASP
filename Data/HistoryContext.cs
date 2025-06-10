@@ -1,114 +1,114 @@
-﻿using System;
-using System.Collections.Generic;
-using Historical__Facts_3.Models;
-using Microsoft.EntityFrameworkCore;
+﻿// using System;
+// using System.Collections.Generic;
+// using Historical__Facts_3.Models;
+// using Microsoft.EntityFrameworkCore;
 
-namespace Historical__Facts_3.Data;
+// namespace Historical__Facts_3.Data;
 
-public class HistoryContext : DbContext
-{
-    // public HistoryContext()
-    // {
-    // }
+// public class HistoryContext : DbContext
+// {
+//     // public HistoryContext()
+//     // {
+//     // }
 
-    public HistoryContext(DbContextOptions<HistoryContext> options)
-        : base(options)
-    {
-    }
+//     public HistoryContext(DbContextOptions<HistoryContext> options)
+//         : base(options)
+//     {
+//     }
 
-    public  DbSet<Africa> Africa { get; set; }
+//     public  DbSet<Africa> Africa { get; set; }
 
-    public DbSet<Antarctica> Antarctica { get; set; }
+//     public DbSet<Antarctica> Antarctica { get; set; }
 
-    public DbSet<Asium> Asia { get; set; }
+//     public DbSet<Asium> Asia { get; set; }
 
-    public DbSet<Europe> Europes { get; set; }
+//     public DbSet<Europe> Europes { get; set; }
 
-    public DbSet<NorthAmerica> NorthAmerica { get; set; }
+//     public DbSet<NorthAmerica> NorthAmerica { get; set; }
 
-    public DbSet<Oceanium> Oceania { get; set; }
+//     public DbSet<Oceanium> Oceania { get; set; }
 
-    public DbSet<SouthAmerica> SouthAmerica { get; set; }
+//     public DbSet<SouthAmerica> SouthAmerica { get; set; }
 
 
 
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
-    // {
-    //     modelBuilder.Entity<Africa>(entity =>
-    //     {
-    //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Africa__E1C02A8860A72EB3");
+//     // protected override void OnModelCreating(ModelBuilder modelBuilder)
+//     // {
+//     //     modelBuilder.Entity<Africa>(entity =>
+//     //     {
+//     //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Africa__E1C02A8860A72EB3");
 
-    //         entity.ToTable("Africa");
+//     //         entity.ToTable("Africa");
 
-    //         entity.Property(e => e.HistoricalFactId)
-    //             .ValueGeneratedNever()
-    //             .HasColumnName("HistoricalFactID");
-    //     });
+//     //         entity.Property(e => e.HistoricalFactId)
+//     //             .ValueGeneratedNever()
+//     //             .HasColumnName("HistoricalFactID");
+//     //     });
 
-    //     modelBuilder.Entity<Antarctica>(entity =>
-    //     {
-    //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Antarcti__E1C02A889BB8B16F");
+//     //     modelBuilder.Entity<Antarctica>(entity =>
+//     //     {
+//     //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Antarcti__E1C02A889BB8B16F");
 
-    //         entity.ToTable("Antarctica");
+//     //         entity.ToTable("Antarctica");
 
-    //         entity.Property(e => e.HistoricalFactId)
-    //             .ValueGeneratedNever()
-    //             .HasColumnName("HistoricalFactID");
-    //     });
+//     //         entity.Property(e => e.HistoricalFactId)
+//     //             .ValueGeneratedNever()
+//     //             .HasColumnName("HistoricalFactID");
+//     //     });
 
-    //     modelBuilder.Entity<Asium>(entity =>
-    //     {
-    //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Asia__E1C02A88332AE2C7");
+//     //     modelBuilder.Entity<Asium>(entity =>
+//     //     {
+//     //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Asia__E1C02A88332AE2C7");
 
-    //         entity.Property(e => e.HistoricalFactId)
-    //             .ValueGeneratedNever()
-    //             .HasColumnName("HistoricalFactID");
-    //     });
+//     //         entity.Property(e => e.HistoricalFactId)
+//     //             .ValueGeneratedNever()
+//     //             .HasColumnName("HistoricalFactID");
+//     //     });
 
-    //     modelBuilder.Entity<Europe>(entity =>
-    //     {
-    //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Europe__E1C02A88A697DCA9");
+//     //     modelBuilder.Entity<Europe>(entity =>
+//     //     {
+//     //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Europe__E1C02A88A697DCA9");
 
-    //         entity.ToTable("Europe");
+//     //         entity.ToTable("Europe");
 
-    //         entity.Property(e => e.HistoricalFactId)
-    //             .ValueGeneratedNever()
-    //             .HasColumnName("HistoricalFactID");
-    //     });
+//     //         entity.Property(e => e.HistoricalFactId)
+//     //             .ValueGeneratedNever()
+//     //             .HasColumnName("HistoricalFactID");
+//     //     });
 
-    //     modelBuilder.Entity<NorthAmerica>(entity =>
-    //     {
-    //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__NorthAme__E1C02A88C21AAE81");
+//     //     modelBuilder.Entity<NorthAmerica>(entity =>
+//     //     {
+//     //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__NorthAme__E1C02A88C21AAE81");
 
-    //         entity.ToTable("NorthAmerica");
+//     //         entity.ToTable("NorthAmerica");
 
-    //         entity.Property(e => e.HistoricalFactId)
-    //             .ValueGeneratedNever()
-    //             .HasColumnName("HistoricalFactID");
-    //     });
+//     //         entity.Property(e => e.HistoricalFactId)
+//     //             .ValueGeneratedNever()
+//     //             .HasColumnName("HistoricalFactID");
+//     //     });
 
-    //     modelBuilder.Entity<Oceanium>(entity =>
-    //     {
-    //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Oceania__E1C02A8875752F28");
+//     //     modelBuilder.Entity<Oceanium>(entity =>
+//     //     {
+//     //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__Oceania__E1C02A8875752F28");
 
-    //         entity.Property(e => e.HistoricalFactId)
-    //             .ValueGeneratedNever()
-    //             .HasColumnName("HistoricalFactID");
-    //     });
+//     //         entity.Property(e => e.HistoricalFactId)
+//     //             .ValueGeneratedNever()
+//     //             .HasColumnName("HistoricalFactID");
+//     //     });
 
-    //     modelBuilder.Entity<SouthAmerica>(entity =>
-    //     {
-    //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__SouthAme__E1C02A8885B9B059");
+//     //     modelBuilder.Entity<SouthAmerica>(entity =>
+//     //     {
+//     //         entity.HasKey(e => e.HistoricalFactId).HasName("PK__SouthAme__E1C02A8885B9B059");
 
-    //         entity.ToTable("SouthAmerica");
+//     //         entity.ToTable("SouthAmerica");
 
-    //         entity.Property(e => e.HistoricalFactId)
-    //             .ValueGeneratedNever()
-    //             .HasColumnName("HistoricalFactID");
-    //     });
+//     //         entity.Property(e => e.HistoricalFactId)
+//     //             .ValueGeneratedNever()
+//     //             .HasColumnName("HistoricalFactID");
+//     //     });
 
-    //     OnModelCreatingPartial(modelBuilder);
-    // }
+//     //     OnModelCreatingPartial(modelBuilder);
+//     // }
 
-    // partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-}
+//     // partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+// }
