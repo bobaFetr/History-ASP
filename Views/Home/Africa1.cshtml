@@ -1,0 +1,26 @@
+@model Historical__Facts_3.Models.Africa
+
+@{
+    ViewData["Title"] = "Africa1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Africa1</h1>
+
+<div>
+    <h3>Historical Fact</h3>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HistoricalFactId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HistoricalFactId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FactDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FactDescription)
+        </dd>
+    </dl>
+</div>

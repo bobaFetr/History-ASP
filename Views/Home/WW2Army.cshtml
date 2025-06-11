@@ -1,0 +1,167 @@
+@model List<Historical__Facts_3.Models.WW2Armies>
+@{
+    ViewData["Title"] = "WW2 Army Sizes";
+}
+
+<div>
+  <select onchange="if (this.value) window.location.href = this.value;">
+    <option value="">-- Select a page --</option>
+    <optgroup label="WW2 Pages">
+      <option value="Territories.html">Territories</option>
+    </optgroup>
+  </select>
+</div>
+
+<div class="container">
+  <h1>WW2 Army Sizes</h1>
+  <canvas id="userChart" width="400" height="200"></canvas>
+  <button id="loadButton">Load Data</button>
+</div>
+
+@section Styles {
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: rgb(97, 142, 25);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    canvas {
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #4CAF50;
+      color: rgb(97, 142, 25);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    select {
+      width: 300px;
+      padding: 10px 15px;
+      border: 2px solid rgb(97, 142, 25);
+      border-radius: 12px;
+      background-color: #f9f9f9;
+      font-size: 16px;
+      font-family: 'Segoe UI', sans-serif;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 20px;
+      cursor: pointer;
+    }
+
+    select:focus {
+      border-color: #4a90e2;
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.2);
+    }
+
+    optgroup {
+      font-weight: bold;
+      color: #333;
+      background-color: #eee;
+      padding: 5px;
+    }
+
+    option {
+      padding: 10px;
+      font-size: 15px;
+    }
+  </style>
+}
+
+@section Scripts {
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    let userChart = null;
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("loadButton").addEventListener("click", loadChart);
+    });
+
+    function loadChart() {
+      const armyData = [
+        { country: "Soviet Union", size: 34000000 },
+        { country: "Germany", size: 18000000 },
+        { country: "United States", size: 16000000 },
+        { country: "China", size: 14000000 },
+        { country: "Japan", size: 6000000 },
+        { country: "United Kingdom", size: 5500000 },
+        { country: "France", size: 5000000 },
+        { country: "Italy", size: 4000000 },
+        { country: "Bulgaria", size: 450000 },
+        { country: "Hungary", size: 300000 },
+        { country: "Romania", size: 2000000 },
+        { country: "Finland", size: 500000 },
+        { country: "Poland", size: 1000000 },
+        { country: "Canada", size: 1000000 },
+        { country: "Australia", size: 1000000 },
+        { country: "New Zealand", size: 500000 },
+        { country: "South Africa", size: 500000 }
+      ];
+
+      const labels = armyData.map(entry => entry.country);
+      const data = armyData.map(entry => entry.size);
+
+      const ctx = document.getElementById('userChart').getContext('2d');
+
+      if (userChart) {
+        userChart.destroy();
+      }
+
+      userChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Estimated Army Size (WW2)',
+            data: data,
+            backgroundColor: 'rgba(54, 162, 235, 0.5)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                callback: function(value) {
+                  return value.toLocaleString();
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+  </script>
+}
